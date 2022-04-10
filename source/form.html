@@ -7,10 +7,10 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav_logo" href="#">
+          <img class="main-nav__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
+        </a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -27,13 +27,12 @@
             </li>
           </ul>
         </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       </nav>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <p class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </header>
     <main class="main-inner">
-      <header class="main-inner__header">
-        <h1 class="main-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </header>
+      <h1 class="visually-hidden">Форма для регистрации на конкурс</h1>
       <form class="forms" action="https://echo.htmlacademy.ru" method="post">
         <div class="registration">
           <h2 class="visually-hidden">Регистрация</h2>
@@ -115,7 +114,7 @@
         </div>
 
         <div class="apps-filter">
-          <h2 class="visually hidden">Выбор приложения</h2>
+          <h2 class="visually-hidden">Выбор приложения</h2>
           <fieldset class="apps-filter__group">
             <legend class="apps-filter__title">С каким приложением путешествовали?</legend>
             <ul class="apps-filter__list">
@@ -145,14 +144,14 @@
           <h2 class="visually-hidden">Описание впечатлений</h2>
           <label for="text-description__field">
             <span class="text-description__title">Опишите свои эмоции</span>
-            <textarea class="text-description__field" name="text-description__field" id="text-description__field" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="text-description__field" name="text-description__field" id="text-description__field">Можно прям в красках, не стесняясь в выражениях</textarea>
           </label>
         </div>
 
         <div class="send-forms">
           <h2 class="visually-hidden">Отправить данные</h2>
           <button class="button send-forms__button" type="submit">Отправить форму</button>
-          <p class="required-fields">* — обязательные поля</p>
+          <p class="required-fields"><span class="required-fields__warn">*</span> — обязательные поля</p>
         </div>
       </form>
     </main>
