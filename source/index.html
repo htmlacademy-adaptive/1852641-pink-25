@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="../source/img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
+        </a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -26,32 +27,32 @@
             </li>
           </ul>
         </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       </nav>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Приложение фоторедактор Pink.</h1>
       <section class="apps">
         <div class="apps__wrapper">
-          <header class="apps__header">
+          <div class="apps__header">
             <h2 class="visually-hidden">Скачать приложение.</h2>
             <p class="apps__slogan">Взгляните на жизнь иначе!</p>
-          </header>
+          </div>
           <button class="button apps__download" type="button">Скачать приложение</button>
           <ul class="apps__list">
             <li class="apps__item">
               <a class="apps__link" href="#">
-                <img class="apps__logo apps__logo--apple" src="../source/img/apple-logo.svg" width="47" height="56" alt="Приложение Appple.">
+                <img class="apps__logo apps__logo--apple" src="img/apple-logo.svg" width="47" height="56" alt="Приложение Appple.">
               </a>
             </li>
             <li class="apps__item">
               <a class="apps__link" href="#">
-                <img class="apps__logo apps__logo--android" src="../source/img/android-logo.svg" width="43" height="47" alt="Приложение Android.">
+                <img class="apps__logo apps__logo--android" src="img/android-logo.svg" width="43" height="47" alt="Приложение Android.">
               </a>
             </li>
             <li class="apps__item">
               <a class="apps__link" href="#">
-                <img class="apps__logo apps__logo--microsoft" src="../source/img/microsoft-logo.svg" width="44" height="41" alt="Приложение Microsoft.">
+                <img class="apps__logo apps__logo--microsoft" src="img/microsoft-logo.svg" width="44" height="41" alt="Приложение Microsoft.">
               </a>
             </li>
           </ul>
@@ -99,6 +100,9 @@
             <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Цена</h2>
       </section>
     </main>
     <footer class="main-footer">
