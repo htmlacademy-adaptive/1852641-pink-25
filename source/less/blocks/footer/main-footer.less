@@ -7,3 +7,13 @@
   display: flex;
 }
 
+
+.main-footer-container {
+  min-height: 127px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}

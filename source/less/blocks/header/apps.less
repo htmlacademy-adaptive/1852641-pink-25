@@ -1,6 +1,10 @@
 .apps {
   background-color: #1d2631;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(29, 38, 49, 0);
+  }
 }
 
 .apps__list {
@@ -23,7 +27,6 @@
 
 .apps__description {
   color: #ffffff;
-  background-color: #1d2631;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
