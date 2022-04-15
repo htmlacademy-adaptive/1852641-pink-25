@@ -1,3 +1,15 @@
+.contacts {
+  min-height: 614px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 779px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 867px;
+  }
+}
+
 .contacts__slogan {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -19,7 +31,7 @@
 }
 
 .contacts__link {
-  color: #d22856;
+  color: @dark-red;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
