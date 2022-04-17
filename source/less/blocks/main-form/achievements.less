@@ -1,6 +1,18 @@
 .achievements {
   color: @dark-blue;
   background-color: #f2f2f2;
+  min-height: 604px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+    background-color: #ffffff;
+    min-height: 604px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 240px;
+    grid-column: span 2;
+  }
 }
 
 .achievements__catalog {

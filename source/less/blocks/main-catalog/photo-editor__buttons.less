@@ -1,3 +1,12 @@
+.photo-editor__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .photo-editor__buttons > .button {
   width: 280px;
   height: 55px;
