@@ -1,3 +1,17 @@
+.text-description {
+  min-height: 300px;
+
+  @media (min-width: @tablet-width) {
+    order: 6;
+    min-height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 220px;
+    grid-column: span 2;
+  }
+}
+
 .text-description__title {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;

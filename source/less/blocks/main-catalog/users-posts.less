@@ -4,12 +4,40 @@
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+  text-align: center;
 }
 
 .users-posts__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.users-posts__item:first-child {
+  grid-column: -1/1;
+}
+
+.users-posts__item {
+  background-color: #f2f2f2;
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 300px;
+  }
 }
 
 .users-posts__text {
@@ -18,4 +46,5 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
 }

@@ -1,4 +1,19 @@
-.registration-data__label {
+.registration-data {
+  min-height: 289px;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+    min-height: 289px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 310px;
+    grid-column: span 2;
+  }
+}
+
+.registration-data__label,
+.registration-data__title {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -14,4 +29,10 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.registration-data__group {
+  border: none;
+  display: flex;
+  flex-direction: column;
 }

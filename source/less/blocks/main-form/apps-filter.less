@@ -1,5 +1,16 @@
 .apps-filter {
   background-color: #f2f2f2;
+  min-height: 340px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    order: 3;
+    min-height: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 340px;
+  }
 }
 
 .apps-filter__group {
