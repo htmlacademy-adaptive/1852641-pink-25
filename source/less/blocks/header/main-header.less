@@ -1,6 +1,6 @@
 .main-header {
-  background-color: #1d2631;
-  color: #ffffff;
+  background-color: @deep-blue;
+  color: @white;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -23,5 +23,26 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 33px;
-  color: #ffffff;
+  color: @white;
 }
+
+.main-header__slogan {
+  color: @white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
