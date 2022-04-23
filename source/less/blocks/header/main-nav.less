@@ -12,10 +12,6 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -87,15 +83,15 @@
   left: 17px;
   width: 36px;
   height: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #ffffff;
+  background-color: @white;
   box-shadow:
-    0 8px 0 0 #ffffff,
-    0 16px 0 0 #ffffff;
+    0 8px 0 0 @white,
+    0 16px 0 0 @white;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -110,7 +106,7 @@
     left: 17px;
     width: 36px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: @white;
   }
 
   &::before {
