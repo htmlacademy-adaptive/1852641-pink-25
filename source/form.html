@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="#">
           <img class="main-nav__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
         </a>
@@ -40,17 +40,17 @@
           <div class="registration">
             <h2 class="visually-hidden">Регистрация</h2>
             <fieldset class="registration__field">
-              <label for="user-surname">
+              <label class="registration__wrapper" for="user-surname">
                 <span class="registration__label">Фамилия:</span>
                 <input class="field registration__surname" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
               </label>
 
-              <label for="user-name">
+              <label class="registration__wrapper" for="user-name">
                 <span class="registration__label">Имя:</span>
                 <input class="field registration__name" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
               </label>
 
-              <label for="patronymic">
+              <label class="registration__wrapper" for="patronymic">
                 <span class="registration__label">Отчество:</span>
                 <input class="field registration__patronymic" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже" required>
               </label>
@@ -105,13 +105,13 @@
           <div class="registration-data">
             <h2 class="visually-hidden">Данные для регистрации</h2>
             <fieldset class="registration-data__group">
-              <legend class="visually-hidden">Контактная информация</legend>
-              <label for="user-tel">
+              <legend class="registration-data__title">Контактная информация</legend>
+              <label class="registration-data__wrapper" for="user-tel">
                 <span class="registration-data__label">Номер телефона</span>
                 <input class="registration-data__input" type="text" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста" required>
               </label>
 
-              <label for="user-email">
+              <label class="registration-data__wrapper" for="user-email">
                 <span class="registration-data__label">Адрес почты</span>
                 <input class="registration-data__input" type="text" name="user-email" id="user-email" placeholder="Введите почту *" required>
               </label>
@@ -145,13 +145,11 @@
             </fieldset>
           </div>
 
-          <div class="text-description">
-            <h2 class="visually-hidden">Описание впечатлений</h2>
-            <label for="text-description__field">
-              <span class="text-description__title">Опишите свои эмоции</span>
-              <textarea class="text-description__field" name="text-description__field" id="text-description__field">Можно прям в красках, не стесняясь в выражениях</textarea>
-            </label>
-          </div>
+          <h2 class="visually-hidden">Описание впечатлений</h2>
+          <fieldset class="text-description">
+            <legend class="text-description__title">Опишите свои эмоции</legend>
+            <textarea class="text-description__field" name="text-description__field" id="text-description__field">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
 
           <div class="send-forms">
             <h2 class="visually-hidden">Отправить данные</h2>
@@ -247,5 +245,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

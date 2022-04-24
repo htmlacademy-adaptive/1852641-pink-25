@@ -1,22 +1,30 @@
 .achievements {
   color: @dark-blue;
   background-color: @light-grey;
-  min-height: 604px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     order: 5;
     background-color: @white;
-    min-height: 604px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 240px;
     grid-column: span 2;
   }
 }
 
 .achievements__catalog {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @pale-gray;
+    border-radius: 1px;
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+  }
 }
 
 .achievements__description {
@@ -26,4 +34,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-red;
+  text-align: center;
+  padding: 0 33px;
 }

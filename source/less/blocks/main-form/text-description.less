@@ -1,13 +1,19 @@
 .text-description {
-  min-height: 300px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     order: 6;
-    min-height: 300px;
+    border: 2px solid @pale-gray;
+    border-radius: 1px;
+    padding: 0 60px;
+    padding-top: 47px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 220px;
     grid-column: span 2;
   }
 }
@@ -19,6 +25,7 @@
   line-height: 18px;
   color: @dark-red;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .text-description__field {
@@ -29,4 +36,16 @@
   color: @dark-blue;
   border: 2px solid @pale-gray;
   border-radius: 1px;
+  width: 276px;
+  height: 197px;
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    height: 189px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 816px;
+    height: 124px;
+  }
 }

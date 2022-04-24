@@ -1,3 +1,26 @@
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
 .icons__list {
   display: flex;
+  width: 195px;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.icons__item {
+  display: flex;
+}
+
+.icons__range {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

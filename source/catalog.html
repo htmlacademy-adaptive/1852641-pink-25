@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="#">
           <img class="main-nav__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение Pink.">
         </a>
@@ -30,7 +30,7 @@
         </div>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       </nav>
-      <p class="main-header__title">Фотографии пользователей</p>
+      <p class="main-header__title">Фотографии<br> пользователей</p>
     </header>
     <main class="main-catalog">
       <h1 class="visually-hidden">Фотографии пользователей</h1>
@@ -192,6 +192,15 @@
                         d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"
                         fill="#D22856"/>
                   </svg>
+                  <div class="icons__range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle">
+                          <span class="visually-hidden">Изменить значение фильтра.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="icons__item">
                   <svg class="icons__fill"
@@ -204,6 +213,15 @@
                         opacity=".5"
                         fill="#283645"/>
                   </svg>
+                  <div class="icons__range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle">
+                          <span class="visually-hidden">Изменить значение фильтра.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li class="icons__item">
                   <svg class="icons__contrast"
@@ -216,11 +234,26 @@
                           <path d="M16 24.29a8.52 8.52 0 0 0 0-17"/>
                         </g>
                   </svg>
+                  <div class="icons__range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle">
+                          <span class="visually-hidden">Изменить значение фильтра.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
             <div class="range">
-
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle">
+                    <span class="visually-hidden">Изменить значение фильтра.</span>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="photo-editor__buttons">
               <button class="button button-post" type="button">Запостить</button>
@@ -316,5 +349,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
