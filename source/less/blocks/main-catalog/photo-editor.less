@@ -2,6 +2,7 @@
   background-color: @light-grey;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -11,4 +12,43 @@
 .photo-editor__container {
   display: flex;
   flex-direction: column;
+}
+
+.photo-editor__photo {
+  padding-top: 20px;
+}
+
+.range {
+  height: 76px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.range-scale {
+  position: relative;
+}
+
+.range-bar {
+  position: absolute;
+  width: 240px;
+  height: 2px;
+  background-color: @black;
+  border-radius: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -5px;
+  left: 193px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid @dark-red;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
 }

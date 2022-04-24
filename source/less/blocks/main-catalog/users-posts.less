@@ -25,14 +25,14 @@
 
 .users-posts__item {
   background-color: @light-grey;
-  min-width: 280px;
+}
+
+.users-posts__item:not(:first-child) {
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 300px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 300px;
+    width: 300px;
   }
 }
 

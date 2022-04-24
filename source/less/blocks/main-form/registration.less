@@ -1,13 +1,6 @@
 .registration {
-  min-height: 563px;
-
   @media (min-width: @tablet-width) {
-    min-height: 563px;
     order: 2;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 563px;
   }
 }
 
@@ -15,6 +8,11 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    width: 433px;
+    margin: 0 auto;
+  }
 }
 
 .registration__label {
@@ -33,4 +31,14 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  flex-grow: 1;
+}
+
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }

@@ -1,20 +1,24 @@
 .apps-filter {
   background-color: @light-grey;
-  min-height: 340px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
     order: 3;
-    min-height: 340px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 340px;
   }
 }
 
 .apps-filter__group {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @pale-gray;
+    border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 431px;
+    margin: 0 auto;
+  }
 }
 
 .apps-filter__title {
@@ -24,4 +28,6 @@
   line-height: 18px;
   color: @dark-red;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0 33px;
 }
