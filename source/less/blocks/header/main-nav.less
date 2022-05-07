@@ -202,3 +202,37 @@
     text-align: left;
   }
 }
+
+.main-nav__logo {
+  fill: @white;
+
+  &:hover {
+    fill: @dark-red;
+  }
+}
+
+.main-nav__logo--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
