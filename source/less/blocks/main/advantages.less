@@ -1,5 +1,5 @@
 .advantages {
-  background-image: url("../img/grey-background.jpg");
+  background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -72,9 +72,47 @@
 }
 
 .advantages__img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 547px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__img-wrapper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
+  }
+}
+
+.advantages__img-wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/iphone-screen-smile.jpg");
+  background-repeat: no-repeat;
+  background-size: 136px 245px;
+  width: 136px;
+  height: 245px;
+  top: 38px;
+  left: 93px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/iphone-screen-smile-tablet.jpg");
+    background-size: 237px 421px;
+    width: 237px;
+    height: 421px;
+    top: 64px;
+    left: 47px;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,6 +123,8 @@
 @media (min-width: @desktop-width) {
   .advantages__item::before {
     display: block;
+    margin: 0 auto;
+    position: relative;
     background-image: url("../img/iphone.png");
     background-repeat: no-repeat;
     background-size: 186px 382px;
@@ -94,16 +134,82 @@
   }
 }
 
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/iphone-screen-grey.jpg");
+  background-repeat: no-repeat;
+  background-size: 165px 294px;
+  width: 165px;
+  height: 294px;
+  top: 44px;
+  left: 132px;
+}
+
+.advantages__item:nth-child(2)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/iphone-screen.jpg");
+  background-repeat: no-repeat;
+  background-size: 165px 294px;
+  width: 165px;
+  height: 294px;
+  top: 44px;
+  left: 117px;
+}
+
+.advantages__item:nth-child(3)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/iphone-screen-smile-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 165px 294px;
+  width: 165px;
+  height: 294px;
+  top: 44px;
+  left: 105px;
+}
+
 .advantages__research {
   display: none;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @light-grey;
+  }
+}
+
+.timer {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.advantages-research__wrapper {
+  @media (min-width: @tablet-width) {
+    grid-column: 2/3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
   }
 }
 

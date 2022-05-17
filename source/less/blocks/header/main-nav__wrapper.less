@@ -1,8 +1,16 @@
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+.main-nav__wrapper {
+  @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
     width: 700px;
-    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.main-nav__logo-link {
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 130px;
+    margin-right: 170px;
+    margin-top: 27px;
   }
 }

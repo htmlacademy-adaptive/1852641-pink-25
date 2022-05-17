@@ -1,0 +1,24 @@
+.price {
+  height: 234px;
+  background-color: @light-grey;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+  }
+}
+
+.price::before {
+  content: "";
+  height: 18px;
+  position: absolute;
+  top: -1;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background-color: @white;
+}
