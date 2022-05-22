@@ -9,9 +9,10 @@
   }
 }
 
-.reviews-list {
+.reviews__list {
   color: @black;
   background-color: @white;
+  display: flex;
 }
 
 .reviews__author-info {
@@ -66,5 +67,47 @@
     font-size: 18px;
     line-height: 30px;
     order: 1;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    border: none;
+    background-color: @white;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+.reviews__prev {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 41px;
+    width: 22px;
+    height: 41px;
+  }
+}
+
+.reviews__next {
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 41px;
+    width: 22px;
+    height: 41px;
+  }
+}
+
+.reviews__icon {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin: 0 auto;
   }
 }

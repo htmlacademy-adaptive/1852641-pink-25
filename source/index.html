@@ -125,9 +125,13 @@
         </div>
       </section>
       <section class="reviews">
+        <svg class="reviews__icon" width="79" height="63">
+          <use href="../img/sprite.svg#quotes"/>
+        </svg>
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list slider__list">
+            <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
@@ -135,18 +139,86 @@
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
             <button class="reviews__next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
           </div>
-          <p class="reviews__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="reviews__toggles toggles">
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Цена</h2>
+        <table class="price-table">
+          <tr class="price-table__row">
+            <th class="visually-hidden"></th>
+            <th class="price-table__header">База<br><span class="price-table__header--normal">1,99 USD</span></th>
+            <th class="price-table__header">Стандарт<br><span class="price-table__header--normal">3,99 USD</span></th>
+            <th class="price-table__header">Анлим<br><span class="price-table__header--normal">9,99 USD</span></th>
+          </tr>
+          <tr class="price-table__row">
+            <td class="price-table__data">Розовый фильтр</td>
+            <td class="price-table__data price-table__data--align">
+              <svg class="price-table__icon" width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg>
+            </td>
+            <td class="price-table__data price-table__data--align">
+              <span class="price-table__data--hidden">Розовый фильтр</span>
+              <svg width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg></td>
+            <td class="price-table__data price-table__data--align">
+              <svg width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg>
+            </td>
+          </tr>
+          <tr class="price-table__row">
+            <td class="price-table__data">Смайлики</td>
+            <td class="price-table__data price-table__data--align">
+              <svg width="27" height="27">
+                <use href="../img/sprite.svg#no"/>
+              </svg>
+            </td>
+            <td class="price-table__data price-table__data--align">
+              <span class="price-table__data--hidden">Смайлики</span>
+              <svg width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg>
+            </td>
+            <td class="price-table__data price-table__data--align">
+              <svg width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg>
+            </td>
+          </tr>
+          <tr class="price-table__row">
+            <td class="price-table__data">Комментарии</td>
+            <td class="price-table__data price-table__data--align">
+              <svg width="27" height="27">
+                <use href="../img/sprite.svg#no"/>
+              </svg>
+            </td>
+            <td class="price-table__data price-table__data--align">
+              <span class="price-table__data--hidden">Комментарии</span>
+              <svg width="27" height="27">
+                <use href="../img/sprite.svg#no"/>
+              </svg>
+            </td>
+            <td class="price-table__data price-table__data--align">
+              <svg width="31" height="21">
+                <use href="../img/sprite.svg#yes"/>
+              </svg>
+            </td>
+          </tr>
+        </table>
+        <p class="price__toggles toggles">
+          <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
+        </p>
       </section>
     </main>
     <footer class="main-footer">

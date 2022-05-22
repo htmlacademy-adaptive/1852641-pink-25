@@ -1,14 +1,11 @@
 .price {
-  height: 234px;
   background-color: @light-grey;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    height: 155px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 100px;
+    overflow: visible;
+    position: static;
   }
 }
 
