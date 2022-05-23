@@ -1,0 +1,21 @@
+.price {
+  background-color: @light-grey;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    overflow: visible;
+    position: static;
+  }
+}
+
+.price::before {
+  content: "";
+  height: 18px;
+  position: absolute;
+  top: -1;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background-color: @white;
+}

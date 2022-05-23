@@ -1,9 +1,77 @@
 .apps {
   background-color: @deep-blue;
   color: @white;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background-color: @deep-blue-transparent;
+  }
+}
+
+.apps::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/phone-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 286px;
+  width: 320px;
+  height: 286px;
+  top: -420px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/phone-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 660px 545px;
+    width: 660px;
+    height: 545px;
+    top: -431px;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/phone-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    width: 1050px;
+    height: 645px;
+    top: -530px;
+    left: 130px;
+    z-index: 2;
+  }
+}
+
+.apps::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/screen-apps-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 111px 197px;
+  width: 111px;
+  height: 197px;
+  top: -388px;
+  left: 105px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/screen-apps-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 195px 346px;
+    width: 195px;
+    height: 346px;
+    top: -377px;
+    left: 371px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/screen-apps-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 230px 408px;
+    width: 230px;
+    height: 408px;
+    top: -465px;
+    left: 700px;
   }
 }
 

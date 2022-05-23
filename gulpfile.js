@@ -32,13 +32,15 @@ csso()
 
 export const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({ collapseWhitespace: true }))
 .pipe(gulp.dest('build'));
 }
 
 // Scripts
 
 export const scripts = () => {
-return gulp.src('source/js/script.js')
+return gulp.src('source/js/*.js')
+.pipe(terser())
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
@@ -75,7 +77,7 @@ export const svg = () => {
 }
 
 export const sprite = () => {
-return gulp.src('source/img/sprite/*.svg')
+return gulp.src('source/img/icons/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
@@ -142,6 +144,7 @@ optimizeImages,
 gulp.parallel(
 styles,
 html,
+scripts,
 svg,
 sprite,
 createWebp
@@ -157,6 +160,7 @@ copyImages,
 gulp.parallel(
 styles,
 html,
+scripts,
 svg,
 sprite,
 createWebp
